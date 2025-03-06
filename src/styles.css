@@ -1,0 +1,58 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+p {
+  margin: 0;
+  padding: 0.75rem 1rem;
+}
+
+p:hover {
+  background: lightgray;
+}
+
+.carousel {
+  width: 100px;
+  position: relative;
+  padding: 2rem;
+}
+
+.carousel-content {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  outline: 1px solid black;
+}
+
+.carousel-item {
+  min-width: 100px;
+  display: none;
+  justify-content: center;
+}
+
+.carousel-item.active {
+  display: inline-flex;
+}
+
+.carousel-buttons {
+  position: absolute;
+}
+
+#prev {
+  left: 0rem;
+  top: 1.95rem;
+}
+#next {
+  right: 0rem;
+  top: 1.95rem;
+}
